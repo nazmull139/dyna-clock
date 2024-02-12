@@ -1,0 +1,129 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+transition: all 0.4s ease;
+}
+
+
+
+section{
+
+    min-height: 100vh;
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
+}
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px; ;
+    max-width:550px ;
+    width:100% ;
+    background:#fff ;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.4) ;
+border-radius: 12px;
+position: relative;
+
+}
+section.dark .container {
+    background:rgb(31, 30, 30) ;
+}
+
+section .container .icon i{
+
+
+position: absolute;
+top: 17px;
+right:50px;
+height:30px;
+width: 30px;
+background: black;
+text-align: center;
+color: #fff;
+border-radius:50%;
+line-height:30px;
+cursor:pointer;
+font-size: 14px;
+}
+
+ section.dark{
+    background: black;
+}
+
+section .container .icon i.fa-sun{
+
+opacity: 0;
+pointer-events: none;
+
+}
+section.dark .container .icon i.fa-sun {
+
+    opacity: 1;
+    color:black;
+    background: white;
+  }
+  section.dark .container .icon i.fa-moon {
+
+    opacity: 0;
+  }
+
+
+section .container .time{
+    display: flex;
+    align-items: center;
+}
+
+ .container .time .time-colon{
+
+    display: flex;
+    align-items: center;
+     
+    
+}
+
+ .time .time-colon .time-text{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgb(255, 253, 253);
+   border-radius: 20px;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   box-shadow:0 5px 10px rgba(0, 0, 0, 0.4) ;
+   color: black;
+}
+
+section.dark .container .time .time-colon .time-text {
+
+    background: rgb(0, 0, 0);
+    color: white;
+}
+section.dark .container .time .time-colon .am-pm {
+    color: white;
+}
+section.dark .container .time .time-colon .colon{
+
+    color: white;
+}
+.time-colon .num{
+    font-size: 50px;
+}
+.time-colon .colon{
+
+    font-size: 50px;
+    padding: 10px;
+    color: black;
+}
+.time-colon .am-pm{
+    font-size: 30px;
+    padding:0 0 40px 10px;
+}
